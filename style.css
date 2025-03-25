@@ -101,6 +101,23 @@ main{
     cursor: pointer;
     
   }
+
+  .primary:hover {
+    background: linear-gradient(45deg, #ff33f5, #822e85);
+    box-shadow: 0px 0px 20px rgba(255, 51, 221, 0.6);
+}
+
+/* Efeito de "apertar" ao clicar */
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.primary:active {
+    animation: bounce 0.2s ease;
+}
+  
   section.formulario{
     padding: 80px 4%;
 
